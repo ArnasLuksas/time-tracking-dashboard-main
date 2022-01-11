@@ -9,7 +9,7 @@
 - SCSS + media queries
 - JavaScript
 
- <img src="" alt="" > 
+ <img src="https://raw.githubusercontent.com/ArnasLuksas/time-tracking-dashboard-main/main/images/time-tracking.png" alt="time tracking" > 
 
 
 ## The challenge
