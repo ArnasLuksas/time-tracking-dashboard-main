@@ -1,0 +1,377 @@
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --white: white;
+  --light-red-work: hsl(15, 100%, 70%);
+  --soft-blue-play: hsl(195, 74%, 62%);
+  --light-red-study: hsl(348, 100%, 68%);
+  --lime-green-exercise: hsl(145, 58%, 55%);
+  --violet-social: hsl(264, 64%, 52%);
+  --soft-orange-self-care: hsl(43, 84%, 65%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-Blue: hsl(236, 100%, 87%);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: var(--very-dark-blue);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4em 2em;
+  max-width: 375px;
+}
+
+.container header .person-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.container header .person-container .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  background: var(--blue);
+  padding: 1.5em 2em;
+}
+
+.container header .person-container .person .person_img {
+  width: 70px;
+}
+
+.container header .person-container .person .person_img img {
+  width: 100%;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+
+.container header .person-container .person .person_reporter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container header .person-container .person .person_reporter .person_title {
+  font-size: 12px;
+  color: var(--pale-Blue);
+}
+
+.container header .person-container .person .person_reporter .person_name {
+  color: var(--white);
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.container header .btn_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background: var(--dark-blue);
+  border-radius: 10px;
+  padding-top: 20px;
+  z-index: -1;
+}
+
+.container header .btn_container div {
+  margin: 1em 0.5em;
+  padding: 0.5em 0;
+  cursor: pointer;
+  color: var(--desaturated-blue);
+}
+
+.container header .btn_container div:hover {
+  color: var(--white);
+}
+
+.container .timeTrack .timeTrack_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--white);
+}
+
+.container .timeTrack .timeTrack_container div {
+  margin: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 10px;
+}
+
+.container .timeTrack .timeTrack_container div .json_data {
+  margin-top: 1em;
+  background-color: var(--dark-blue);
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+}
+
+.container .timeTrack .timeTrack_container div .json_data .title_hours {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.container .timeTrack .timeTrack_container div .json_data .title_hours h3 {
+  font-size: 18px;
+  padding: 0.5em 0;
+  font-weight: 100;
+}
+
+.container .timeTrack .timeTrack_container div .json_data .title_hours p {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.container .timeTrack .timeTrack_container div .json_data .last_week {
+  color: var(--pale-Blue);
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .timeTrack .timeTrack_container div .json_data .last_week img {
+  width: 20px;
+  padding: 1.2em 0;
+  cursor: pointer;
+}
+
+.container .timeTrack .timeTrack_container div .json_data .last_week p {
+  font-size: 12px;
+}
+
+.container .timeTrack .work {
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--light-red-work);
+}
+
+.container .timeTrack .play {
+  background-image: url("/images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--soft-blue-play);
+}
+
+.container .timeTrack .study {
+  background-image: url("/images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--light-red-study);
+}
+
+.container .timeTrack .exercise {
+  background-image: url("/images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--lime-green-exercise);
+}
+
+.container .timeTrack .social {
+  background-image: url("/images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--violet-social);
+}
+
+.container .timeTrack .self_care {
+  background-image: url("/images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--soft-orange-self-care);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+  .container header .person-container .person {
+    padding: 2.5em 2em;
+  }
+  .container .timeTrack .timeTrack_container div.json_data {
+    padding: 1em 0em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1440px;
+    height: 100vh;
+  }
+  .container header .person-container {
+    margin-right: 2em;
+  }
+  .container header .person-container .person {
+    padding: 2em 3.5em 7em 3.5em;
+    position: relative;
+    top: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .container header .person-container .person .person_reporter {
+    width: 150px;
+  }
+  .container header .person-container .person .person_reporter .person_name {
+    font-size: 33px;
+  }
+  .container header .person-container .person img {
+    margin-bottom: 2em;
+  }
+  .container header .person-container .btn_container {
+    position: relative;
+    top: -14px;
+    padding-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container header .person-container .btn_container div {
+    padding: 0 1em;
+    font-size: 18px;
+  }
+  .container header .person-container .btn_container .daily {
+    margin-top: 0;
+  }
+  .container .timeTrack .timeTrack_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (300px)[3];
+        grid-template-columns: repeat(3, 300px);
+        grid-template-areas: "work play study" "exercise social self_care ";
+    grid-gap: 0em 2em;
+  }
+  .container .timeTrack .timeTrack_container .work {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: work;
+  }
+  .container .timeTrack .timeTrack_container .play {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: play;
+  }
+  .container .timeTrack .timeTrack_container .study {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: study;
+  }
+  .container .timeTrack .timeTrack_container .exersice {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: exercise;
+  }
+  .container .timeTrack .timeTrack_container .social {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: social;
+  }
+  .container .timeTrack .timeTrack_container .self_care {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: self_care;
+  }
+  .container .timeTrack .timeTrack_container div.json_data {
+    padding: 2em 0em;
+    cursor: pointer;
+  }
+  .container .timeTrack .timeTrack_container div.json_data .title_hours h3 {
+    position: relative;
+    bottom: 25px;
+    left: 0px;
+  }
+  .container .timeTrack .timeTrack_container div.json_data .title_hours p {
+    font-size: 60px;
+  }
+  .container .timeTrack .timeTrack_container div.json_data .last_week p {
+    position: absolute;
+    bottom: -25px;
+    width: 200px;
+    right: 24px;
+  }
+  .container .timeTrack .timeTrack_container div.json_data img {
+    position: relative;
+    bottom: 55px;
+    left: 0px;
+  }
+  .container .timeTrack .timeTrack_container div.json_data:hover {
+    background: var(--blue);
+  }
+}
+/*# sourceMappingURL=main.css.map */
